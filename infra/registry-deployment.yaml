@@ -62,6 +62,16 @@ spec:
               value: skills-vc
             - name: notification_url
               value: http://localhost:8765/divoc/notification-service/v1/notification
+            - name: signature_enabled
+              value: true
+            - name: sign_url
+              value: http://localhost:8079/sign
+            - name: verify_url
+              value: http://localhost:8079/verify
+            - name: template_base_url
+              value: http://localhost:8081/api/v1/templates/
+            - name: pdf_url
+              value: http://localhost:8078/api/v1/certificatePDF
           image: dockerhub/opensaber-rc:latest
           imagePullPolicy: Always
           volumeMounts:

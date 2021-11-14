@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (HEAD)
+  labels:
+    k8s-app: certificate-signer
+  name: certificate-signer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: certificate-signer
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.22.0 (HEAD)
+      labels:
+        k8s-app: certificate-signer
+    spec:
+      containers:
+          image: dockerhub/dockerhub/sunbird-rc-certificate-signer:latest
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 500m
+              memory: 2Gi
+#            limits:
+#              cpu: 500m
+          name: certificate-signer
+          ports:
+            - containerPort: 8079
+      restartPolicy: Always
