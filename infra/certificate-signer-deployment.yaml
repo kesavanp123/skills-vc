@@ -23,7 +23,8 @@ spec:
         k8s-app: certificate-signer
     spec:
       containers:
-          image: dockerhub/dockerhub/sunbird-rc-certificate-signer:latest
+        - name: certificate-signer
+          image: dockerhub/sunbird-rc-certificate-signer
           imagePullPolicy: Always
           resources:
             requests:
@@ -31,7 +32,6 @@ spec:
               memory: 2Gi
 #            limits:
 #              cpu: 500m
-          name: certificate-signer
           ports:
             - containerPort: 8079
       restartPolicy: Always
