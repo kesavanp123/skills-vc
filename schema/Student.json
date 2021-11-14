@@ -83,7 +83,7 @@
         },
         "issuer": "did:issuer:sunbird"
       },
-      "inviteRoles": [],
-      "roles": []
+      "inviteRoles": ["anonymous"],
+      "roles": ["teacher"]
     }
   }
