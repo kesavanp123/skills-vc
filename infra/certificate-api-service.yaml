@@ -13,7 +13,7 @@ spec:
       port: 8078
       protocol: TCP
       targetPort: 8078
-      nodePort: 10002
+      nodePort: 30011
   selector:
     k8s-app: certificate-api
   sessionAffinity: None
