@@ -97,12 +97,19 @@
             "type": "string",
             "title": "Principal / Dean / Head - Mobile"
           },
-          "affiliation": {
+          "courses": {
             "type": "array",
             "items": {
-              "$ref": "#/definitions/Affiliation"
+              "$ref": "#/definitions/Courses"
             },
-            "title": "Affiliation"
+            "title": "Courses"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Skills"
+            },
+            "title": "Skills"
           }
         }
       },
