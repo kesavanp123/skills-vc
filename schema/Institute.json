@@ -156,6 +156,9 @@
         }
       ],
       "subjectJsonPath": "email",
+      "inviteRoles": ["anonymous"],
+      "roles": [],
+      "enableLogin": true,
       "ownershipAttributes": [
         {
           "email": "/email",
