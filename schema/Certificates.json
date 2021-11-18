@@ -28,7 +28,7 @@
             },
             "certificateType": {
               "type": "string",
-              "enum": ["Attendance", "Certificates", "Work", "Reputation"],
+              "enum": ["Attendance", "Skill", "Work", "Reputation"],
               "title": "Certificate Type"
             },
             "mobile": {
