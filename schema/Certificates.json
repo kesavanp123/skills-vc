@@ -46,6 +46,10 @@
             "skill": {
               "type": "string",
               "title": "Skills"
+            },
+            "awardedOn": {
+              "type":"string",
+              "title": "Awared on"
             }
         }
       }
