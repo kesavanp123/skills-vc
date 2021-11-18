@@ -163,8 +163,8 @@
         }
       ],
       "subjectJsonPath": "email",
-      "inviteRoles": ["anonymous"],
-      "roles": [],
+      "inviteRoles": [],
+      "roles": ["teacher"],
       "enableLogin": true,
       "ownershipAttributes": [
         {
