@@ -83,11 +83,7 @@
         "issuanceDate": "2021-08-27T10:57:57.237Z",
         "credentialSubject": {
           "type": "Person",
-          "name": "{{name}}",
-          "certificateType": "{{certificateType}}",
-          "course": "{{course}}",
-          "skill":"{{skill}}",
-          "awardedOn":"{{awardedOn}}"
+          "name": "{{name}}"
         },
         "issuer": "did:issuer:sunbird"
       },
