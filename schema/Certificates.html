@@ -8,12 +8,13 @@
 <body>
     <div class="card">
         <div class="card-title">
-            {{credentialSubject.certificateType}} Certificate
+            {{evidence.0.certificateType}} Certificate
         </div>
         <div class="card-body">
             Name: {{credentialSubject.name}} <br>
-            Course: {{credentialSubject.course}} <br>
-            Skill: {{credentialSubject.skill}} <br>
+            Course: {{evidence.0.course}} <br>
+            Skill: {{evidence.0.skill}} <br>
+            Awarded On: {{evidence.0.awardedOn}} <br>
         </div>
     </div>
     <div>
